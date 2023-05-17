@@ -14,8 +14,7 @@
     "test": "grunt"
   },
   "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Matthew McCall",
       "email": "matt@amida-tech.com"
     },
@@ -38,10 +37,10 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-  "node": ">= 14.19.3"
+    "node": ">= 14.19.3"
   },
   "dependencies": {
-    "@manhydra/libxmljs": "^0.19.12",
+    "libxmljs": "^1.0.9",
     "lodash": "^4.17.21",
     "moment": "^2.29.4"
   },

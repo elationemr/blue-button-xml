@@ -1,5 +1,5 @@
 {
-  "name": "blue-button-xml",
+  "name": "@amida-tech/blue-button-xml",
   "version": "1.8.7",
   "description": "Blue Button XML Parsing Infrastructure",
   "main": "./index.js",

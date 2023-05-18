@@ -53,11 +53,11 @@ exports.leafNodeValue = function (node) {
 };
 
 exports.xpath = (function () {
-    var DEFAULT_NS = {
-        "h": "urn:hl7-org:v3",
-        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-        "sdtc": "urn:hl7-org:sdtc"
-    };
+  var DEFAULT_NS = {
+    "h": "urn:hl7-org:v3",
+    "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "sdtc": "urn:hl7-org:sdtc"
+  };
 
   return function (doc, p, ns) {
     var r = [];

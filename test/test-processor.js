@@ -43,7 +43,7 @@ describe('processor', function () {
     expect(r.data.b).toEqual([true, false, false]);
     expect(r.data.f).toEqual([1.5, 0.75]);
     expect(r.data.fAttr).toBe(5.5);
-    expect(r.data.t).toHaveLength(8);
+    expect(r.data.t).toHaveLength(9);
     expect(r.data.t[0]).toBe("2012-01-01T00:00:00.000Z");
     expect(r.data.t[1]).toBe("2012-09-01T00:00:00.000Z");
     expect(r.data.t[2]).toBe("2012-09-15T00:00:00.000Z");
@@ -52,6 +52,7 @@ describe('processor', function () {
     expect(r.data.t[5]).toBe("2012-09-15T00:00:00.000Z");
     expect(r.data.t[6]).toBe("2012-09-15T00:00:00.000Z");
     expect(r.data.t[7]).toBe("2012-09-15T19:12:15.123Z");
+    expect(r.data.t[8]).toBe("0001-01-01T00:00:00.000Z");
     expect(r.data.p[0]).toBe("year");
     expect(r.data.p[1]).toBe("month");
     expect(r.data.p[2]).toBe("day");
@@ -60,6 +61,7 @@ describe('processor', function () {
     expect(r.data.p[5]).toBe("day");
     expect(r.data.p[6]).toBe("day");
     expect(r.data.p[7]).toBe("subsecond");
+    expect(r.data.p[8]).toBe("day");
     expect(r.data.ts).toBeUndefined();
     expect(r.data.ps).toBeUndefined();
     expect(r.data.tzero).toBeUndefined();
